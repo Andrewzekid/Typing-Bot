@@ -18,7 +18,7 @@ pyautogui.click(cookies_button[0],cookies_button[1],button="left")
 time.sleep(2)
 def reset_words_list(words_list):
     text_elements = driver.find_elements(By.XPATH,"//div[@id='row1']/span")
-    words_list = [i.get_attribute("textContext") for i in text_elements]
+    words_list = [i.get_attribute("textContent") for i in text_elements]
     return words_list
 
 word_list = reset_words_list(word_list)
