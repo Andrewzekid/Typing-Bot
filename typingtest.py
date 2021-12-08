@@ -34,3 +34,4 @@ for word in word_list:
     else:
         pyautogui.typewrite(word + " ")
         time.sleep(0.02)
+driver.quit()
